@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   jx3-msa-01:
   - apiVersion: v1
-    created: "2022-05-21T14:22:05.051704336Z"
+    created: "2022-05-21T14:49:51.151738501Z"
     description: A Helm chart for Kubernetes
     digest: 2626046cef2baf888af3f4a929135ab130b3c9f5481e90c5ad7d60ee572a12ac
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
@@ -10,4 +10,4 @@ entries:
     urls:
     - jx3-msa-01-0.1.0-SNAPSHOT.tgz
     version: 0.1.0-SNAPSHOT
-generated: "2022-05-21T14:22:05.048847721Z"
+generated: "2022-05-21T14:49:51.150710014Z"

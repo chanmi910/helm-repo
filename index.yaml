@@ -1,13 +1,14 @@
 apiVersion: v1
 entries:
-  jx3-msa-01:
-  - apiVersion: v1
-    created: "2022-05-21T14:49:51.151738501Z"
+  app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-06-10T00:07:34.67210223Z"
     description: A Helm chart for Kubernetes
-    digest: 2626046cef2baf888af3f4a929135ab130b3c9f5481e90c5ad7d60ee572a12ac
-    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    name: jx3-msa-01
+    digest: a1c483bc05b77091c23ec4715c376fa9facf07209089088bf6d5725fc261505b
+    name: app
+    type: application
     urls:
-    - jx3-msa-01-0.1.0-SNAPSHOT.tgz
-    version: 0.1.0-SNAPSHOT
-generated: "2022-05-21T14:49:51.150710014Z"
+    - app-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-06-10T00:07:34.671449776Z"

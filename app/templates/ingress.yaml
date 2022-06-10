@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ .Values.name}}-ingress
+  namespace: default
+spec:
+  rules:
+  - host: {{ .Values.name}}.34.125.148.132.nip.io
+    http:
+      paths:
+      - backend:
+          serviceName: {{ .Values.name}}
+          servicePort: 8080
+        path: /

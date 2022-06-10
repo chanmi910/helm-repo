@@ -1,0 +1,32 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: msa01
+  namespace: argocd
+  # Add a this finalizer ONLY if you want these to cascade delete.
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  
+  source:
+    repoURL: https://github.com/chanmi910/helm-repo.git
+    targetRevision: HEAD
+    path: charts
+
+    chart: app
+    helm:
+      valueFiles:
+      - values-dev.yaml
+  
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: msa-01
+  
+  syncPolicy:
+    automated: 
+      prune: true 
+      selfHeal: true   
+    # Namespace Auto-Creation ensures that namespace specified as the application destination exists in the destination cluster.  
+    syncOptions:
+      - CreateNamespace=true

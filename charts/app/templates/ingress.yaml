@@ -1,16 +1,16 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: {{ .Values.name}}-ingress
+  name: {{ .Values.label}}-{{ .Values.name}}-ingress
   namespace: default
   annotations:
     kubernetes.io/ingress.class: nginx  
 spec:
   rules:
-  - host: {{ .Values.name}}.34.125.148.132.nip.io
+  - host: {{ .Values.label}}.{{ .Values.name}}.34.125.148.132.nip.io
     http:
       paths:
       - backend:
-          serviceName: {{ .Values.name}}
+          serviceName: {{ .Values.label}}-{{ .Values.name}}
           servicePort: 8080
         path: /

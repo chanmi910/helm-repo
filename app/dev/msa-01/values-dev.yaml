@@ -1,3 +1,8 @@
 app:
   label: dev
   image: "chanmi910/jx3-msa-01:b78ca76d22bdfdfc1a919d9e63953945d83afe20"
+spec:
+  template:
+    spec:
+      containers:
+        - image: chanmi910/msa-01:663c3c947a5af14959ddb8b1c750749a834bc596

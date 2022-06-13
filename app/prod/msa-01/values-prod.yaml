@@ -1,3 +1,0 @@
-app: 
-  label: prod
-  image: "chanmi910/jx3-msa-01:90aadde08d263b6fd4432298366d51aaeb048a7c"
